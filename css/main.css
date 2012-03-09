@@ -1,0 +1,115 @@
+body{
+	margin: 0;
+	padding: 0;
+	font-family: "Antic", sans-serif;
+	background: -moz-linear-gradient(top,  #5A98C9,  #427094) grey;
+	background: -webkit-linear-gradient(top,  #5A98C9,  #427094) grey;
+}
+
+#container{
+	width: 790px;
+	margin: auto;
+}
+
+#header{
+	background-color: #949370;
+	padding: 10px;
+	height: 300px;
+}
+
+#content{
+	background-color: #EDDBAD;
+	padding: 10px 20px;
+}
+
+#contact{
+	margin: 0px;
+	padding: 5px;
+	width: 492px;
+	height: 380px;
+	background-color: silver;
+	float: left;
+}
+#connect{
+	margin: 0px;
+	padding: 5px;
+	width: 278px;
+	height: 380px;
+	background-color: silver;
+	float: right;
+}
+
+h1, h2, h3, h4, h5 {
+	font-weight: normal;
+	font-family: 'Quicksand', sans-serif;
+	line-height: .2;
+}
+
+h1{
+	font-size: 300%;
+	color: white;
+}
+
+h2{
+	font-size: 275%;
+}
+
+h3{
+	font-size: 250%;
+}
+
+p{
+	line-height:1.6;
+}
+
+#nav{
+	padding: 0;
+	margin-top: 220px;
+	list-style-type: none:
+}	
+
+#nav li{	
+	display: inline;
+}
+
+#nav li a{
+	color: white;
+	padding: 0px 17px 15px;
+	font-family: "Antic", sans-serif;
+	line-height: 1.6;
+	text-transform: uppercase;
+	text-decoration: none;
+}
+
+#nav li a:hover{
+	background-color: #6B634E;
+	color: silver;
+}
+
+#images{
+	list-style-type: none;
+}
+
+#images li a{
+	border: 8px solid #5A98C9;
+	display: block;
+	width: 200px;
+	height: 250px;
+}
+
+#images li a:hover{
+	border-color: white;
+}
+
+li{
+	float: left;
+	margin: 10px;
+}
+
+#clear{
+	clear: left;
+}
+
+a:hover{
+	color: #423D30;
+}
