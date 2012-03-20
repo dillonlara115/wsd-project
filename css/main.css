@@ -3,46 +3,110 @@ body{
 	padding: 0;
 	max-width: 790px;
 	font-family: "Antic", sans-serif;
-	background: -moz-linear-gradient(top,  #5A98C9,  #427094) grey;
-	background: -webkit-linear-gradient(top,  #5A98C9,  #427094) grey;
+	background: -moz-linear-gradient(top, #5A98C9, #427094) grey;
+	background: -webkit-linear-gradient(top, #5A98C9, #427094) grey;
+}
+/* ###########################  Buttons ######################### */
+
+.button {
+	display: inline-block;
+	outline: none;
+	cursor: pointer;
+	text-align: center;
+	text-decoration: none;
+	font: 14px/100% Arial, Helvetica, sans-serif;
+	padding: .5em 2em .55em;
+	text-shadow: 0 1px 1px rgba(0,0,0,.3);
+	-webkit-border-radius: .5em; 
+	-moz-border-radius: .5em;
+	border-radius: .5em;
+	-webkit-box-shadow: 0 1px 2px rgba(0,0,0,.2);
+	-moz-box-shadow: 0 1px 2px rgba(0,0,0,.2);
+	box-shadow: 0 1px 2px rgba(0,0,0,.2);
+}
+.button:hover {
+	text-decoration: none;
+}
+.button:active {
+	position: relative;
+	top: 1px;
 }
 
+.blue {
+	color: white;
+	border: solid 1px #14293d;
+	background: #5A98C9;
+	background: -webkit-gradient(linear, left top, left bottom, from(#5A98C9), to(#427094));
+	background: -moz-linear-gradient(top,  #5A98C9,  #427094);
+	filter:  progid:DXImageTransform.Microsoft.gradient(startColorstr='#5A98C9', endColorstr='#427094');
+}
+.blue:hover {
+	background: silver;
+	background: -webkit-gradient(linear, left top, left bottom, from(#93c2e5), to(#427094));
+	background: -moz-linear-gradient(top,  #93c2e5,  #427094);
+	filter:  progid:DXImageTransform.Microsoft.gradient(startColorstr='#93c2e5', endColorstr='#427094');
+}
+.blue:active {
+	color: white;
+	background: -webkit-gradient(linear, left top, left bottom, from(#aacce5), to(#5A98C9));
+	background: -moz-linear-gradient(top,  #aacce5,  #5A98C9);
+	filter:  progid:DXImageTransform.Microsoft.gradient(startColorstr='#aacce5', endColorstr='#5A98C9');
+}
+
+
+/* ################## Navigation Section ############## */
+#nav{
+	padding: 0;
+	margin-top: 230px;
+	list-style-type: none;
+}	
+#nav li{	
+	display: inline;
+}
+#nav li a{
+	color: white;
+	padding: 0px 17px 14px;
+	font-family: "Antic", sans-serif;
+	line-height: 1.6;
+	text-transform: uppercase;
+	text-decoration: none;
+}
+#nav li a:hover{
+	background-color: #6B634E;
+	color: silver;
+}
 #container{
 	margin: 0;
 	border: 0;
 	padding: 0;
 	width: 100% /* 790px */;
 }
-
 #header, #content {
 	border: 0;
 	margin: 0;
 	width: 97.468354% /* 770px/790px */;
 	padding: 1.12658228% /* 10px */;
 }
-
 #header{
 	background-image: url('../images/header_bg.png');
 	background-repeat: no-repeat;
 	background-color: #a2a182;
 	height: 330px;
 }
-
 #content{
 	background-color: #EDDBAD;
 }
-
 #contact{
 	padding: 0.56329114% /* 5px */;	
 	width: 63.291139% /* 510/790 */;
-	height: 400px;
+	height: 600px;
 	background-color: silver;
 	float: left;
 }
 #connect{
 	padding: 0.56329114% /* 1.12658228/2 */;	
 	width: 34.177215% /* 280/790 */;
-	height: 400px;
+	height: 600px;
 	background-color: silver;
 	float: left;
 }
@@ -52,83 +116,62 @@ h1, h2, h3, h4, h5 {
 	font-family: 'Quicksand', sans-serif;
 	line-height: .8em;
 }
-
 h1{
 	font-size: 300%;
 	color: white;
 }
-
 h2{
 	font-size: 275%;
 }
-
 h3{
 	font-size: 250%;
 	line-height: 1em;
 }
-
 p{
 	line-height:1.6;
-}
-
-
-/* ################## Navigation Section ############## */
-#nav{
-	padding: 0;
-	margin-top: 220px;
-	list-style-type: none;
-	background-color: white;
-}	
-
-#nav li{	
-	display: inline;
-}
-
-#nav li a{
-	color: white;
-	padding: 0px 17px 14px;
-	font-family: "Antic", sans-serif;
-	line-height: 1.6;
-	text-transform: uppercase;
-	text-decoration: none;
-}
-
-#nav li a:hover{
-	background-color: #6B634E;
-	color: silver;
 }
 /* ##################### Images ######################### */
 #images{
 	list-style-type: none;
 }
-
 #images li a{
 	border: 8px solid #5A98C9;
 	display: block;
 	width: 200px;
 	height: 250px;
 }
-
 #images li a:hover{
 	border-color: white;
 }
-
 img {
 	max-width: 100%;
 }
-
-li{
+#images li{
 	float: left;
 	margin: 10px;
 }
-
 #clear{
 	clear: left;
 }
 
-a:hover{
-	color: #423D30;
+
+/* ########################  Contact Form Design ################### */
+
+input:focus {
+	background: #EDDBAD;
 }
+
+input, textarea, select {
+	border: 1px solid grey;
+	padding: 3px;
+	margin: 3px;
+}
+
+.submit {
+	font-size: 1em;
+	background: #EDDBAD;
+}
+
 
 /* ###########################   Media Queries #################### */
 
@@ -141,10 +184,17 @@ a:hover{
 @media screen and (min-width: 480px) and (max-width: 767px){
 #header{
 	background-size: 100%;
-	height: 400px;
+	height: 35%;
 }
-#nav{
-	margin-top: 180px;
+#nav {
+	margin-top: 30%;
+}
+#nav li{
+	line-height: 2em;
+	display: block;
+}
+#nav li a{
+	padding: 7px 15px 7px;
 }
 h1{
 	padding-right: 200px;
@@ -154,10 +204,11 @@ h1{
 	width: 100%;
 }
 }
-
 @media screen and (max-width: 479px){
 body {
 	line-height: 100%;
+	padding: 0px 5px;
+	font-size: 10px;
 }
 h1{
 	padding-right: 90px;
@@ -170,10 +221,28 @@ h1{
 	width: 100%;
 }
 #header{
-	height: 350px;
+	height: 250px;
 	background-image: none;
 }
 #nav{
-	margin-top: 75px;
+	margin-top: 55px;
+}
+#nav li{
+	display: block;
+}
+#nav li a{
+	color: white;
+	padding: 4px 17px 4px;
+	font-size: 1.4em;
+	font-family: "Antic", sans-serif;
+	line-height: 2em;
+	text-transform: uppercase;
+	text-decoration: none;
+}
+li {
+	display: block;
+}
+a {
+	font-size: 1.4em;
 }
 }

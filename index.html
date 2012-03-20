@@ -1,8 +1,7 @@
 <!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Strict//EN" "http://www.w3.org/TR/xhtml1/DTD/xhtml1-strict.dtd">
 <html>
 <head>
-<meta charset="utf-8">
-<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<meta name="viewport" content="width=device-width, initial-scale=1.0" />
 <link rel="stylesheet" href="css/main.css" />
 <link href='http://fonts.googleapis.com/css?family=Quicksand' rel='stylesheet' type='text/css' />
 <link href='http://fonts.googleapis.com/css?family=Antic' rel='stylesheet' type='text/css' />
@@ -38,23 +37,64 @@
 			</ul>
 			</p>
 	<div id="clear"></div>
-		<p><a href="#header">back to top</a></p>
+		<p><a href="#header" class="button blue">back to top</a></p>
 		<h2>Skills &amp; Experience</h2>
 		<section>
 			<p id="skills">I have over 7 years of experience working with web and graphic design using Adobe products including: Master Collection CS3, CS4, and CS5. I also have experience with Microsoft Front Page, Sandvox, and online blogging tools such as WordPress, LiveJournal and Blogger. Much of my experience has come from personal uses such as websites and promotional items(posters, flyers, stickers, buttons) for bands I have played in growing up but I also have done work for churches I have been apart of and other businesses I worked for which included maintaining a webstore and updating pictures for products.</p>
-			<p><a href="#header">back to top</a></p>
+			<p><a href="#header" class="button blue">back to top</a></p>
 		</section>
 		<h2 id="education">Education</h2>
 			<p><strong>Kirksville High School</strong>, Kirksville, MO High School Diploma</p>
 			<p><strong>Moberly Area Community College</strong>, Kirksville, MO Associates Degree in Liberal Arts</p>
 			<p><strong>Berklee University</strong>, Boston, MA Masters Certificate in Music Production and Technology</p>
 			<p><em>In Progress: Full Sail University, BS in Web Design and Development</em></p>
-			<p><a href="#header">back to top</a></p>
+			<p><a href="#header" class="button blue">back to top</a></p>
 			</div>	
 	<div id="contact">
 		<h2>Contact</h2>
-			<p>The contact form will go here</p>
-			<p><a href="#header">back to top</a></p>
+			<form method="get" action="mailto:dillonlara115@gmail.com">
+			<div>
+				<label for="first_name">First Name</label>
+				<input type="text" name="name_first" id="first_name" />
+			</div>
+			<div>
+				<label for="last_name">Last Name</label>
+				<input type="text" name="last_name" id="last_name" />
+			</div>
+			<div>
+				<label for="email_addr">Email Address</label>
+				<input type="text" name="email_addr" id="email_addr" />
+			</div>
+			<div>
+				<label for="phone">Phone Number</label>
+				<input type="text" name="phone" id="phone" />
+			</div>
+			<div>
+				<label for="reason">Reason for contacting</label>
+			</div>
+			<div>
+				<select name="reason" id="reason">
+				<option>Suggestion</option>
+				<option>Service Estimate</option>
+				<option>General</option>
+				<option>Site Error</option>
+				</select>
+			</div>
+			<div>
+				<label for="message">Message</label><br/>
+				<textarea name="message" rows="7" cols="40"></textarea>
+			</div>
+			<div>
+				<label for="join_newsletter">Would you like to join the newsletter?</label><br/>
+				<input type="radio" name="newsletter_option" id="yes" value="yes" />
+				<label for="yes">Yes</label><br/>
+				<input type="radio" name="newsletter_option" id="no" value="no" />
+				<label for="no">No</label><br/>
+			</div>
+			<input type="submit" class="submit" />
+			</form>
+			
+			<p><a href="#header" class="button blue">back to top</a></p>
 		</div>
 	<div id="connect">
 		<h2>Connect</h2>
@@ -62,7 +102,7 @@
 			<p><a href="http:www.facebook.com/dillon.lara">Facebook</a></p>
 			<p><a href="http:www.twitter.com/jaguarsharksays">Twitter</a></p>
 			<p><a href="mailto:dillonlara115@gmail.com">Email</a></p>
-			<p><a href="#header">back to top</a></p>
+			<p><a href="#header" class="button blue">back to top</a></p>
 		</div>	
 	</div>
 
