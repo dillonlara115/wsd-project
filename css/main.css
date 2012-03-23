@@ -36,15 +36,15 @@ body{
 	color: white;
 	border: solid 1px #14293d;
 	background: #5A98C9;
-	background: -webkit-gradient(linear, left top, left bottom, from(#5A98C9), to(#427094));
+	background: -webkit-gradient:(linear, left top, left bottom, from(#5A98C9), to(#427094));
 	background: -moz-linear-gradient(top,  #5A98C9,  #427094);
-	filter:  progid:DXImageTransform.Microsoft.gradient(startColorstr='#5A98C9', endColorstr='#427094');
+	filter: progid:DXImageTransform.Microsoft.gradient(startColorstr='#5A98C9', endColorstr='#427094');
 }
 .blue:hover {
 	background: silver;
 	background: -webkit-gradient(linear, left top, left bottom, from(#93c2e5), to(#427094));
 	background: -moz-linear-gradient(top,  #93c2e5,  #427094);
-	filter:  progid:DXImageTransform.Microsoft.gradient(startColorstr='#93c2e5', endColorstr='#427094');
+	filter: progid:DXImageTransform.Microsoft.gradient(startColorstr='#93c2e5', endColorstr='#427094');
 }
 .blue:active {
 	color: white;
@@ -153,7 +153,21 @@ img {
 #clear{
 	clear: left;
 }
-
+/* ######################## Education Table ##################### */
+table {
+	border-collapse: collapse;
+	border-spacing: 0;
+	border: solid 2px #5A98C9;
+}
+td {
+	padding: .4em .6em;
+	border: solid 1px #5A98C9;
+}
+th {
+	text-align: left;
+	padding: .4em .6em;
+	background: #5A98C9;
+}
 
 /* ########################  Contact Form Design ################### */
 
@@ -162,14 +176,16 @@ input:focus {
 }
 
 input, textarea, select {
-	border: 1px solid grey;
+	border: 1px solid #959595;
 	padding: 3px;
 	margin: 3px;
 }
 
 .submit {
 	font-size: 1em;
-	background: #EDDBAD;
+}
+.submit:hover {
+	background: #968b6e;
 }
 
 
@@ -225,7 +241,7 @@ h1{
 	background-image: none;
 }
 #nav{
-	margin-top: 55px;
+	margin-top: 40px;
 }
 #nav li{
 	display: block;
